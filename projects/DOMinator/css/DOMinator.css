@@ -1,0 +1,49 @@
+body {
+    background-image: radial-gradient(#ffb366, #66ccff);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "header header" "classmates content";
+    grid-gap: .5em;
+}
+
+#header {
+    grid-area: header;
+    margin: .5em;
+    border: ridge 1.4em #004466;
+    padding: .5em;
+    background-image: radial-gradient(#0099e6, #99ddff);
+    box-shadow: 0px 5px 10px #000000;
+    text-align: center;
+}
+
+#classmates {
+    grid-area: classmates;
+    margin: .5em;
+    border: solid 1.2em #004466;
+    padding: .5em;
+    background-image: radial-gradient(#0099e6, #99ddff);
+    box-shadow: 0px 5px 10px #000000;
+    text-align: center;
+}
+
+#content {
+    grid-area: content;
+    margin: .5em;
+    border: ridge 1.3em #004466;
+    padding: .5em;
+    background-image: radial-gradient(#0099e6, #99ddff);
+    box-shadow: 0px 5px 10px #000000;
+}
+
+a {
+    color: #004466;
+}
+
+.explain {
+    margin: 1.2rem;
+    border: .5rem ridge #004466;
+}

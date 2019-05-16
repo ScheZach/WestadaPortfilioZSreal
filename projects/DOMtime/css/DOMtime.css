@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+#clockDisplay {
+    margin: 1.3rem;
+    border: .7rem ridge #0099e6;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #004466;
+    color: #ffffff;
+}
+
+#content {
+    border: 1rem ridge #004466;
+    background-color: #666666;
+}
