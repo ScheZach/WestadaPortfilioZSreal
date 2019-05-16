@@ -1,0 +1,104 @@
+@media screen and (max-width: 40em) {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header"
+                       "classmates advComp advWeb"
+                       "classmates about about";
+  grid-gap: .5em;
+}
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header"
+                       "classmates advComp advWeb"
+                       "classmates about about";
+  grid-gap: .5em;
+}
+body {
+  background-image: radial-gradient(#ffb366,#66ccff);
+}
+#header {
+  grid-area: header;
+  margin: .5em;
+  border: ridge 1.4em #004466;
+  padding: .5em;
+  background-image: radial-gradient(#0099e6,#99ddff);
+  box-shadow: 0px 5px 10px #000000;
+  font-family: 'PT Sans', sans-serif;
+}
+.schoolImg {
+  margin: .5em;
+  border: ridge 5px #000000;
+  background-color: #FFFFFF;
+}
+#Westada {
+  box-shadow: 5px 5px 10px #000000;
+  float: left;
+}
+#Centennial {
+  box-shadow: -5px 5px 10px #000000;
+  float: right;
+}
+#headText {
+  text-align: center;
+}
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 1.8em;
+}
+.projects {
+  margin: .5em;
+  margin-top: .7em;
+  border: ridge 1em #004466;
+  padding: .5em;
+  background-image: radial-gradient(#0099e6,#99ddff);
+}
+#AdvWeb {
+  grid-area: advWeb;
+  box-shadow: -5px 5px 10px #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: right;
+}
+#AdvComp {
+  grid-area: advComp;
+  box-shadow: 5px 5px 10px #000000;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.projectHead {
+  font-size: 1.8em;
+}
+.ProjectList {
+  font-size: 1.1em;
+}
+#classmates {
+  grid-area: classmates;
+  margin: .5em;
+  margin-top: .7em;
+  border: ridge 1em #004466;
+  padding: .5em;
+  background-image: radial-gradient(#0099e6,#99ddff);
+  text-align: center;
+}
+#about {
+  grid-area: about;
+  margin: .5em;
+  margin-top: .7em;
+  border: ridge 1em #004466;
+  padding: .5em;
+  background-image: radial-gradient(#0099e6,#99ddff);
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+}
+.otherlinks {
+  font-size: 1.1em;
+}
+hr {
+  border-color: #004466;
+  margin: .5em;
+}
