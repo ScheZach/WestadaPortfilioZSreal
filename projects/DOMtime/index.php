@@ -21,6 +21,7 @@
     let date = new Date();
     let currentHour = date.getHours();
     let currentDay = date.getDay();
+    let currentMinute = date.getMinutes();
 
     let createTxtMsg;
     
@@ -30,15 +31,33 @@
     if (currentHour >= 0 && currentHour < 7) {
         createTxtMsg = "School is currently not in session";
     } else if (currentHour >= 7 && currentHour < 9) {
-        createTxtMsg = "You're in first period";
-    } else if (currentHour >= 9 && currentHour < 10) {
-        createTxtMsg = "You're in second period";
+        if (currentHour == 7 && currentMinute < 40) {
+            createTxtMsg = "School is currently not in session";
+        } else {
+            createTxtMsg = "You're in first period";
+        }
+    } else if (currentHour == 9) {
+        if (currentMinute < 20) {
+            createTxtMsg = "You're in first period";
+        } else {
+            createTxtMsg = "You're in second period";
+        }
     } else if (currentHour >= 10 && currentHour < 12) {
-        createTxtMsg = "You're in the lunch hour";
-    } else if (currentHour >= 12 && currentHour < 13) {
+        if (currentHour == 10 && currentMinute < 52) {
+            createTxtMsg = "You're in second period";
+        } else if ((currentHour == 10 && currentMinute > 52) || (currentHour == 11 && currentMinute < 37)) {
+            createTxtMsg = "You're in the lunch hour";
+        } else {
+            createTxtMsg = "You're in third period";
+        }
+    } else if (currentHour == 12) {
         createTxtMsg = "You're in third period";
     } else if (currentHour >= 13 && currentHour < 15) {
+        if (currentHour == 13 && currentMinute < 7) {
+            createTxtMsg = "You're in third period";
+        } else {
         createTxtMsg = "You're in fourth period";
+        }
     } else if (currentHour >= 15 && currentHour < 24) {
         createTxtMsg = "School is currently not in session";
     } else {

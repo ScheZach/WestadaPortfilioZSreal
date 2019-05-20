@@ -82,83 +82,45 @@
       <img id="Westada" class="schoolImg" src="../../images/WestAdaThumb.png" alt="Westada"></img>
       <img id="Centennial" class="schoolImg" src="../../images/logo_centennial-thumb.png" alt="Centennial"></img>
       <div id="headText">
-        <h1>How to use MongoDB</h1>
-        <h2>This guide will include node.js and the mongo command prompt.<br><b>Click on the div headers to see instructions</b></h2>
+        <h1>How to use Github</h1>
+        <h2>This guide will include git and Github.<br><b>Click on the div headers to see instructions</b></h2>
       </div>
       <br>
     </div>
     <div id="AdvComp" class="projects">
-      <h3 class="projectHead" id="mysqltop">Installing Mongo DB and creating a database/collection</h3>
-      <img class="MySQL" src="images/installMongo.png" alt="MySQL1"></img>
-      <h4 class="mysqltxt">In order to use Mongo DB, you will need to install Mongo DB using the above command.</h4>
-      <img class="MySQL" src="images/npmInstallMongo.png" alt="MySql2"></img>
-      <h4 class="mysqltxt">In order to use node with Mongo DB, you will need the node Mongodb driver.</h4>
-      <img class="MySQL" src="images/createdatabaseMongo.png" alt="database"></img>
-      <h4 class="mysqltxt">This is how node creates databases. The way you name databases here is you change the end of var url to your db name.
-       Then to create the database, enter the command line and type node filename.js</h4>
-      <img class="MySQL" src="images/createCollection.png" alt="collection"></img>
-      <h4 class="mysqltxt">This is how node creates collections, table equivalant. You can change the name by changing the quoted string in the createCollection function</h4>
+      <h3 class="projectHead" id="mysqltop">Installing and setting up git</h3>
+      <img class="MySQL" src="images/gitInstall.png" alt="MySQL1"></img>
+      <h4 class="mysqltxt">In order to use git, you will need to install git using the above command.</h4>
+      <img class="MySQL" src="images/gitInit.png" alt="MySql2"></img>
+      <h4 class="mysqltxt">This create a .git folder that keeps track of changes and new files.</h4>
+      <img class="MySQL" src="images/gitStatus.png" alt="database"></img>
+      <h4 class="mysqltxt">This shows what files are new, not being kept track of, or changed.</h4>
     </div>
     <div id="AdvWeb" class="projects">
-      <h3 class="projectHead" id="phpmyadmintop">Inserting into a collection and the find()</h3>
-      <img class="phpmyadmin" src="images/insertManySm.png" alt="phpmyadmin1"></img>
-      <h4 class="phpmyadmintxt"> In order to insert into a collection in node, you need this code above. This is also worth noting that if you are doing one
-      entry, you need to the use the insertOne command.</h4>
-      <a target="_blank" href="images/findOne.png"><img class="phpmyadmin" src="images/findOneSm.png" alt="MySql2"></img></a><br class="phpmyadmin"><br class="phpmyadmin">
-      <a target="_blank" href="images/findMany.png"><img class="phpmyadmin" src="images/findManySm.png" alt="Workbench1"></img></a><br class="phpmyadmin"><br class="phpmyadmin">
-      <a target="_blank" href="images/findFields.png"><img class="phpmyadmin" src="images/findFieldsSm.png" alt="Workbench1"></img></a>
-      <h4 class="phpmyadmintxt"><b>Click the images above to have a larger image.</b> <br class="phpmyadmin">These images are how you find entries. The first command
-      is the generic find one command that gives you everything in the first entry. The second image is the generic find command that gives you everything in all
-      of the entries. The third one is how you specify fields with 0 being hidden and 1 being shown. There also can't be a mix of 1s and 0s excluding _id.</h4>
+      <h3 class="projectHead" id="phpmyadmintop">Commiting</h3>
+      <img class="phpmyadmin" src="images/gitAdd.png" alt="phpmyadmin1"></img>
+      <h4 class="phpmyadmintxt"> The add command selects files to be commited.</h4>
+      <img class="phpmyadmin" src="images/gitIgnore.png" alt="MySql2"></img>
+      <h4 class="phpmyadmintxt"> This file can be changed so that certain files aren't included in a commit.</h4>
+      <img class="phpmyadmin" src="images/gitCommit.png" alt="Workbench1"></img>
+      <h4 class="phpmyadmintxt">This is how you commit files to be uploaded</h4>
     </div>
     <div id="classmates">
       <h3>Here are my other projects</h3>
       <h4>Return to the <a href="../../index.php">main page</a></h4>
     </div>
     <div id="about">
-      <h3 class="projectHead" id="Workbenchtop">How to use the Mongodb command prompts</h3>
-      <img class="Workbench" src="images/cmpMongo.png" alt="ERD"></img>
-      <h4 class="Workbenchtxt">This is how you open the mongo command line.</h4>
-      <img class="Workbench" src="images/cmpShowDbs.png" alt="Workbench1"></img>
-      <h4 class="Workbenchtxt">This is how you see databases, but if a database has nothing in it, it will not appear.</h4>
-      <img class="Workbench" src="images/cmpCreateCollection.png" alt="Workbench2"></img>
-      <h4 class="Workbenchtxt">This is how you use a database. If a database has been created it will automatically create it.</h4>
-      <img class="Workbench" src="images/cmpInsertSm.png" alt="Workbench3"></img>
-      <h4 class="Workbenchtxt">This is how you insert into a table. If you are inserting into a collection that hasn't been created, it will be created.</h4>
-      <img class="Workbench" src="images/cmpCollection.png" alt="Workbench4"></img>
-      <h4 class="Workbenchtxt">This is how you show collections.</h4>
-      <img class="Workbench" src="images/cmpFindSm.png" alt="Workbench5"></img>
-      <h4 class="Workbenchtxt">This is how you use the find command. You can also use the commands show in the node insert section.</h4>
-      <img class="Workbench" src="images/cmpUpdate.png" alt="Workbench6"></img>
-      <h4 class="Workbenchtxt">This is the general update command that also lets you add fields.</h4>
-      <img class="Workbench" src="images/cmpColUpdate.png"></img>
-      <h4 class="Workbenchtxt">This is how you update a entry in a specific field.</h4>
-      <img class="Workbench" src="images/cmpColname.png"></img>
-      <h4 class="Workbenchtxt">This is how you change field names.</h4>
-      <img class="Workbench" src="images/cmpUnset.png"></img>
-      <h4 class="Workbenchtxt">This is how you remove a fields from an entry.</h4>
-      <hr class="Workbenchtxt">
-      <h4 class="Workbenchtxt">Here is some example code that I used with these commands</h4>
-      <img class="Workbench" src="images/exampleInsert.png"></img>
-      <h4 class="Workbenchtxt">This is how I added entries into the collection</h4>
-      <img class="Workbench" src="images/command.png"></img>
-      <img class="Workbench" src="images/find.png"></img>
-      <img class="Workbench" src="images/selective.png"></img>
-      <h4 class="Workbenchtxt">These are all of the commands that I used to find display entries both selectivly and generally.</h4>
-      <hr class="Workbenchtxt">
-      <a target="_blank" href="images/commandArray.png"><img class="Workbench" src="images/commandArraySm.png"></img></a>
-      <h4 class="Workbenchtxt"><b>Click the image above to have a larger image.</b> <br class="Workbenchtxt">This is how we used an array to allow a customer to have multiple animals</h4>
-      <img class="Workbench" src="images/arrayFind.png"></img>
-      <h4 class="Workbenchtxt">This is what it looks like</h4>
-      <hr class="Workbenchtxt">
-      <h4 class="Workbenchtxt"><b>Special Uses</b></h4>
-      <img class="Workbench" src="images/mongoAnd.png"></img>
-      <h4 class="Workbenchtxt">This is how you do an "and" statement in mongo DB. ("or" works in the same way). This works by the and statement being in the 
-      filter part of find(). Then the different requirements are shown via the curly brackets that are in the square brackets.</h4>
-      <img class="Workbench" src="images/mongoRegex.png"></img>
-      <h4 class="Workbenchtxt">This is how you use regular expressions in mongo DB. This show results for dogs with names that have a "ac" in their name.
-      This works by having the forward slashes indictating the use of regular expressions. the ".*" means that anything or nothing could be in those spaces,
-       and the "ac" are literal characters.</h4>
+      <h3 class="projectHead" id="Workbenchtop">Uploading</h3>
+      <img class="Workbench" src="images/gitAddRemote.png" alt="ERD"></img>
+      <h4 class="Workbenchtxt">This is how you create a remote (a place for the files to be held in GitHub).</h4>
+      <img class="Workbench" src="images/gitCheckout.png" alt="Workbench1"></img>
+      <h4 class="Workbenchtxt">This creates branches so that code can be worked on seperatly and be merged later on.</h4>
+      <img class="Workbench" src="images/gitPush.png" alt="Workbench2"></img>
+      <h4 class="Workbenchtxt">This is how you push your commit.</h4>
+      <img class="Workbench" src="images/gitPull.png" alt="Workbench3"></img>
+      <h4 class="Workbenchtxt">This is how you pull files from a GitHub remote.</h4>
+      <img class="Workbench" src="images/gitHub.png" alt="Workbench4"></img>
+      <h4 class="Workbenchtxt">This is what you see on GitHub.</h4>
     </div>
   </div>
 </div>
