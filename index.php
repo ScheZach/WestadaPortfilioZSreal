@@ -35,6 +35,7 @@
       $(".reactTaniaPro").hide();
       $(".raspberrypiPro").hide();
       $(".DOMinatorPro").hide();
+      $(".gitPro").hide();
 
       $("#AdvWeb").mouseenter(function(){
         $("#AdvWeb").animate({fontSize: '1.2em'}, 500);
@@ -107,6 +108,10 @@
 
       $("#DOMinatorHead").click(function() {
         $(".DOMinatorPro").slideToggle();
+      });
+
+      $("#gitHead").click(function() {
+        $(".gitPro").slideToggle();
       });
 
     });
@@ -192,6 +197,8 @@
       <h4 class="reactTaniaPro"><a href="projects/DOMtime/index.php">My DOM clock site (click here)</a></h4>
       <h4 id="DOMinatorHead" class="ProjectList">The DOM-inator (JS DOM) (click here)</h4>
       <h4 class="DOMinatorPro"><a href="projects/DOMinator/index.php">DOM-inator (click here)</a></h4>
+      <h4 id="gitHead" class="ProjectList">git and GitHub page (click here)</h4>
+      <h4 class="gitPro"><a href="projects/github/index.php">git page (click here)</a></h4>
     </div>
     <div id="classmates">
       <h3>Here are my other projects</h3>
